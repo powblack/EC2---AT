@@ -1,0 +1,17 @@
+- name: Ansible AT
+  hosts: webservers
+  tasks:
+  - name: lauching AWS instance using Ansible
+  ec2:
+    key_namr: ansible
+    instance_type: t2.micro
+    image: ami-083654bd07b5da81d
+    region: us-east-1
+    wait: yes
+    group: default
+    count: 1 
+    vpc_subnet_id:subnet-0acff748f0d0ffdb5
+    assign_public_ip: yes
+    aws_acess_key: AKIA6M62PRQCL5NIPNP4 
+    aws_secret_key: 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
+
