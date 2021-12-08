@@ -10,7 +10,7 @@
     wait: yes
     group: default
     count: 1 
-    vpc_subnet_id:subnet-0acff748f0d0ffdb5
+    vpc_subnet_id:subnet: ID Subnet
     assign_public_ip: yes
     aws_acess_key: chave
     aws_secret_key: chave
